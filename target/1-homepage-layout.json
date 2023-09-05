@@ -1,0 +1,159 @@
+{
+  "testId" : "1-homepage-layout",
+  "name" : "homepage layout",
+  "report" : {
+    "nodes" : [ {
+      "name" : "check homepage layout",
+      "status" : "error",
+      "time" : 1693928118171,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Home Page",
+        "place" : {
+          "filePath" : "specs/homepage.gspec",
+          "lineNumber" : 11
+        },
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 16
+            },
+            "name" : "inside screen 0px top",
+            "errors" : [ "\"header\" is absent on page" ],
+            "highlight" : [ ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 17
+            },
+            "name" : "inside screen 0px left",
+            "errors" : [ "\"header\" is absent on page" ],
+            "highlight" : [ ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 18
+            },
+            "name" : "inside screen 0px right",
+            "errors" : [ "\"header\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "sw-logo",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 23
+            },
+            "name" : "below header 31px",
+            "errors" : [ "\"sw-logo\" is absent on page" ],
+            "highlight" : [ ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 25
+            },
+            "name" : "image file sw-logo.png, error %5",
+            "errors" : [ "\"sw-logo\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "navigation-links-1",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "aligned horizontally all navigation-links-2",
+            "errors" : [ "\"navigation-links-1\" is not visible on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "navigation-links-2",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "aligned horizontally all navigation-links-3",
+            "errors" : [ "\"navigation-links-2\" is not visible on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "navigation-links-3",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "aligned horizontally all navigation-links-4",
+            "errors" : [ "\"navigation-links-3\" is not visible on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "navigation-links-4",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "aligned horizontally all navigation-links-5",
+            "errors" : [ "\"navigation-links-4\" is not visible on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "navigation-links-5",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "aligned horizontally all navigation-links-6",
+            "errors" : [ "\"navigation-links-5\" is not visible on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "navigation-links-6",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "aligned horizontally all navigation-links-7",
+            "errors" : [ "\"navigation-links-6\" is not visible on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "nav-menu",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 35
+            },
+            "name" : "above follow-us-box 20px",
+            "errors" : [ "\"nav-menu\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        } ]
+      } ],
+      "objects" : { },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

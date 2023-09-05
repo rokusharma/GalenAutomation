@@ -6,10 +6,11 @@ import com.galenframework.reports.HtmlReportBuilder;
 import com.galenframework.reports.model.LayoutReport;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.*;
+import org.testng.*;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -20,11 +21,11 @@ public class HomepageStepDefinition {
 
     @Given("user navigates to homepage of application")
     public void navigateToHomepage(){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\YM752EF\\DIRE-Automation\\GalenAutomation\\drivers\\chromedriver.exe");
-        driver=  WebDriverManager.chromedriver().create();
+             driver=  new ChromeDriver();
         //Set the browser size for desktop
        driver.manage().window().setSize(new Dimension(390, 844));
-        //Go to swtestacademy.comcontext.getDriver().get("http://www.swtestacademy.com/");
+        //Go to swtestacademy.com
+        driver.get("http://www.swtestacademy.com/");
     }
 
     @Then("validate UI layout of homepage")

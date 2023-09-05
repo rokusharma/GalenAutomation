@@ -4,15 +4,12 @@ import com.galenframework.api.Galen;
 import com.galenframework.reports.GalenTestInfo;
 import com.galenframework.reports.HtmlReportBuilder;
 import com.galenframework.reports.model.LayoutReport;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.Dimension;
+import io.cucumber.java.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.*;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.util.*;
@@ -23,9 +20,7 @@ public class WelcomePageTest  {
     @Before
     public void setUp()
     {
-        //Create a Chrome Driver
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\YM752EF\\DIRE-Automation\\GalenAutomation\\drivers\\chromedriver.exe");
-//        driver =  WebDriverManager.chromedriver().create();
+
         ChromeOptions chromeOptions= new ChromeOptions();
         Map<String, Object> deviceMetrics = new HashMap<>();
         deviceMetrics.put("width", 390);
