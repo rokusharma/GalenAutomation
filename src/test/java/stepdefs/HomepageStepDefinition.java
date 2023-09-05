@@ -10,21 +10,27 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class HomepageStepDefinition {
     WebDriver driver;
 
     @Given("user navigates to homepage of application")
     public void navigateToHomepage(){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\YM752EF\\DIRE-Automation\\GalenAutomation\\drivers\\chromedriver.exe");
-        driver=  WebDriverManager.chromedriver().create();
-        //Set the browser size for desktop
-       driver.manage().window().setSize(new Dimension(390, 844));
-        //Go to swtestacademy.comcontext.getDriver().get("http://www.swtestacademy.com/");
+        ChromeOptions chromeOptions= new ChromeOptions();
+        Map<String, Object> deviceMetrics = new HashMap<>();
+        deviceMetrics.put("width", 390);
+        deviceMetrics.put("height", 844);
+        Map<String, Object> mobileEmulation = new HashMap<>();
+        mobileEmulation.put("deviceMetrics", deviceMetrics);
+        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+        chromeOptions.addArguments("--window-size=");
+        driver= new ChromeDriver(chromeOptions);
+       driver.get("http://www.swtestacademy.com/");
     }
 
     @Then("validate UI layout of homepage")

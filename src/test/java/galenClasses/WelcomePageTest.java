@@ -25,7 +25,6 @@ public class WelcomePageTest  {
     {
         //Create a Chrome Driver
         System.setProperty("webdriver.chrome.driver","C:\\Users\\YM752EF\\DIRE-Automation\\GalenAutomation\\drivers\\chromedriver.exe");
-//        driver =  WebDriverManager.chromedriver().create();
         ChromeOptions chromeOptions= new ChromeOptions();
         Map<String, Object> deviceMetrics = new HashMap<>();
         deviceMetrics.put("width", 390);
