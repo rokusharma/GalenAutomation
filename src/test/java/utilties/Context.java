@@ -1,4 +1,5 @@
 package utilties;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -50,6 +51,7 @@ public class Context {
                 chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
                 chromeOptions.addArguments("--window-size=");
                 driver = new ChromeDriver(chromeOptions);
+                driver.manage().window().setSize(new Dimension(device.getWidth(),device.getHeight()));
             }
         }
         return driver;

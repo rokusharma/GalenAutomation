@@ -3,14 +3,14 @@ package utilties;
 import com.github.dockerjava.api.model.Device;
 
 public enum Devices {
-    MOBILE("Mobile",375,800),
-    DESKTOP("Desktop",1100,1440);
+    IPHONE_14_PRO("iphone14pro",393,852),
+    DESKTOP("desktop",1100,1440);
 
     private final int height;
     private final int width;
     private final String deviceName;
 
-    Devices(String deviceName,int height,int width){
+    Devices(String deviceName,int width,int height){
         this.deviceName=deviceName;
         this.height=height;
         this.width=width;
@@ -28,7 +28,7 @@ public enum Devices {
         return this.deviceName;
     }
 
-    public Devices getLabelByOption(String deviceName){
+    public static Devices getLabelByOption(String deviceName){
         for(Devices device:Devices.values()){
             if(device.getDeviceName().equalsIgnoreCase(deviceName)){
                 return device;
