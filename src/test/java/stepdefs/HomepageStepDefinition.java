@@ -16,7 +16,7 @@ WebDriver driver;
 
     @Given("user navigates to homepage of application")
     public void navigateToHomepage(){
-;        driver.get("http://www.swtestacademy.com/");
+        driver.get(Context.properties.getProperty("appUrl"));
     }
 
     @Then("validate UI layout of homepage")
